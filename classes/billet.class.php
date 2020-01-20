@@ -9,6 +9,7 @@ class Billet{
     
     public function getTitre()
 
+        
 }
 
 ?>

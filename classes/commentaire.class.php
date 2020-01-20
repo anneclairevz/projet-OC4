@@ -9,7 +9,7 @@ class Commentaire{
     private $statut;
 
     
-    public function setStatut ()
+    public function setStatut ( )
 }
 
 ?>
