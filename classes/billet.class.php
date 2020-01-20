@@ -7,6 +7,8 @@ class Billet{
     private $date;
     private $texte;
     
+    public function getTitre()
+
 }
 
 ?>
