@@ -7,9 +7,26 @@ class Billet{
     private $date;
     private $texte;
     
-    public function getTitre()
-
+        public function getTitre(){
         
+    }
+
+        public function getDate () {
+         
+     }
+    
+        public function publierBillet(){
+        
+    }
+    
+        public function modifierBillet(){
+        
+    }
+    
+    
+        public function effacerBillet (){
+        
+    }
 }
 
 ?>

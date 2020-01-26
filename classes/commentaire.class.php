@@ -4,12 +4,35 @@ class Commentaire{
     
     private $id;
     private $id_billet;
-    private $auteur;
+    private $id_auteur;
     private $texte;
     private $statut;
 
     
-    public function setStatut ( )
+    public function ecrireCommentaire(){
+        
+    }
+    
+    public function afficherCommentaire(){
+        
+    }
+    
+    public function setStatut (){
+         
+    }
+    
+    public function signalerCommentaire(){
+        
+    }
+    
+    public function modifierCommentaire(){
+        
+    }
+    
+    public function effacerCommentaire(){
+        
+    }
+    
 }
 
 ?>
