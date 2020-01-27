@@ -16,19 +16,8 @@
 <body>
 
     <!-- Header -->
-    <header id="header" class="alt">
 
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">A propos de l'auteur</a></li>
-                <li><a href="generic.html">Chapitres</a></li>
-                <li><a href="generic.html">Bibliographie</a></li>
-                <li><a href="elements.html">Connexion</a></li>
-
-            </ul>
-        </nav>
-    </header>
+    <?php include ("header.php"); ?>
 
     <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
@@ -52,20 +41,8 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
-        <div class="container">
-            <ul class="icons">
-                <li><a href="#" class="icon fa-facebook"></a></li>
-                <li><a href="#" class="icon fa-twitter"></a></li>
-                <li><a href="#" class="icon fa-instagram"></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Untitled</li>
-                <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-                <li>Images: <a href="http://unsplash.com">Unsplash</a></li>
-            </ul>
-        </div>
-    </footer>
+
+    <?php include ("footer.php"); ?>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>

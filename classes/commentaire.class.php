@@ -4,10 +4,16 @@ class Commentaire{
     
     private $id;
     private $id_billet;
-    private $id_auteur;
+    private $date;
     private $texte;
     private $statut;
 
+    
+    
+    //getters
+    
+    
+    //setters
     
     public function ecrireCommentaire(){
         
