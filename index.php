@@ -32,29 +32,10 @@
         </ul>
     </section>
 
-    <!-- One -->
-    <section id="one" class="wrapper style1">
-        <div class="container 75%">
-            <div class="row 200%">
-                <div class="6u 12u$(medium)">
-                    <header class="major">
-                        <h2>Bienvenue sur mon Blog</h2>
-                    </header>
-                </div>
-                <div class="6u$ 12u$(medium)">
-                    <p>"Il y a tant de gens qui ne sont pas heureux et qui, pourtant, ne prendrons pas l'initiative de changer leur situation parce qu'ils sont conditionnés a vivre dans la sécurité, (...) toutes choses qui semblent apporter la paix de l'esprit (...) la joie de vivre vient de nos expériences nouvelles (...)"</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- bloc -->
 
-    <!-- Two -->
     <section id="two" class="wrapper style2 special">
         <div class="container">
-            <header class="major">
-                <h2>Fusce ultrices fringilla</h2>
-                <p>Maecenas vitae tellus feugiat eleifend</p>
-            </header>
             <div class="row 150%">
                 <div class="6u 12u$(xsmall)">
                     <div class="image fit captioned">
@@ -89,7 +70,7 @@
                     <div class="content">
                         <header>
                             <h4>Chapitre 1</h4>
-                            <p>Lorem ipsum dolor sit</p>
+                            <p>Une échappée sauvage</p>
                         </header>
                         <p>"Paul était un garçon étrange, différent des autres, mais lui et McCardy ont au moins essayé de vivre leur rêve. Ils ont essayé. Peu de gens le font."</p>
                     </div>
@@ -99,7 +80,7 @@
                     <div class="content">
                         <header>
                             <h4>Chapitre 2</h4>
-                            <p>Ratione maiores a, commodi</p>
+                            <p>Trop étrange pour être vrai</p>
                         </header>
                         <p>"Parfois il essayait trop de donner un sens au monde, de comprendre pourquoi les gens se font si souvent du mal"</p>
                     </div>
@@ -109,7 +90,7 @@
                     <div class="content">
                         <header>
                             <h4>Chapitre 3</h4>
-                            <p>Possimus ex reprehenderit eaque</p>
+                            <p>Un caractère solitaire</p>
                         </header>
                         <p>“N'oublie jamais, quand tu veux quelque chose dans la vie, tu n'as qu'à tendre la main et le prendre.”</p>
                     </div>
@@ -119,7 +100,7 @@
                     <div class="content">
                         <header>
                             <h4>Chapitre 4</h4>
-                            <p>Quaerat, excepturi eveniet laboriosam</p>
+                            <p>La rencontre avec soi-même</p>
                         </header>
                         <p>"Depuis deux ans, il marche sur la terre. Pas de téléphone, pas de piscine, pas d'animaux de compagnie, pas de cigarettes. Liberté ultime. Un voyageur esthète dont le domicile est la route."</p>
                     </div>
@@ -132,11 +113,11 @@
     <section id="four" class="wrapper style3 special">
         <div class="container">
             <header class="major">
-                <h2>Aenean elementum ligula</h2>
-                <p>Feugiat sed lorem ipsum magna</p>
+                <h2>Un nouveau chapitre chaque mois</h2>
+                <p>Restez informé sur la sortie des prochains chapitres !</p>
             </header>
             <ul class="actions">
-                <li><a href="#" class="button special big">S'inscrire</a></li>
+                <li><a href="#" class="button special big">S'inscrire à la newsletter</a></li>
             </ul>
         </div>
     </section>

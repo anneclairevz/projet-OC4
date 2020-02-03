@@ -2767,7 +2767,7 @@ article.special {
 }
 
 header p {
-    color: #aaa;
+    color: #666;
     position: relative;
     margin: 0 0 1.5em 0;
     text-transform: uppercase;
@@ -2948,7 +2948,7 @@ body.is-touch .wrapper.style3 {
 
 .wrapper.style3 {
     background-attachment: fixed;
-    background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+    background-image: url("../../images/aurore-boreale.jpg");
     background-position: center center;
     background-size: cover;
 }
@@ -3114,7 +3114,7 @@ body.is-touch .wrapper.style3 {
 }
 
 #header.alt nav a {
-    color: #ddd;
+    color: #666;
 }
 
 #header.alt nav a:active,
@@ -3305,7 +3305,7 @@ body.is-touch #banner {
 #banner {
     padding: 16em 0 13em 0;
     background-attachment: fixed;
-    background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+    background-image: url("../../images/man-mountains.jpg");
     background-position: center top;
     background-size: cover;
     line-height: 1.75;
@@ -3317,7 +3317,7 @@ body.is-touch #banner {
 }
 
 #banner h2 {
-    color: #ffffff;
+    color: #666;
     display: inline-block;
     font-size: 3.5em;
     line-height: 1.35;
@@ -3325,7 +3325,7 @@ body.is-touch #banner {
 }
 
 #banner p {
-    color: #aaa;
+    color: #666;
     font-size: 1.5em;
     margin-bottom: 1.75em;
     text-transform: uppercase;
@@ -3398,7 +3398,7 @@ body.is-touch #banner {
 #footer {
     padding: 8em 0 6em 0;
     background: #f6f6f6;
-    color: #aaa;
+    color: #666;
     text-align: center;
 }
 

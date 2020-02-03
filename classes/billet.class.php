@@ -8,6 +8,7 @@ class Billet{
     private $_texte;
     
     
+    
     //getters
     
     public function id()
@@ -41,7 +42,7 @@ class Billet{
         if ($id > 0)
         
         {
-           $this->$_id = $id; 
+           $this->_id = $id; 
         }
     }
     
@@ -51,14 +52,14 @@ class Billet{
         if (is_string($titre))
         
         {
-           $this->$_titre = $titre; 
+           $this->_titre = $titre; 
         }
     }
     
     
     public function setDate($date)
     {
-           $this->$_date = $date; 
+           $this->_date = $date; 
         
     }
         
@@ -67,18 +68,17 @@ class Billet{
     
     
     
+
     
     
-    
-    
-    //fonctions a bouger ds manager
+/*    //fonctions a bouger ds manager
     
         public function getTitre(){
         
     }
 
         public function getDate () {
-         
+         s
      }
     
         public function creerBillet(){
@@ -97,7 +97,7 @@ class Billet{
         public function effacerBillet (){
         
     }
-        
+       */ 
         
    
 
