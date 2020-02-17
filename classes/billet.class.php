@@ -1,6 +1,8 @@
 <?php
 
-class Billet{
+require('entity.class.php');
+
+class Billet extends Entity {
     
     private $_id;
     private $_titre;

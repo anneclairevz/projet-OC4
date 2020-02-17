@@ -2,7 +2,10 @@
 
 // Chargement des classes
 require_once('model/BilletManager.php');
+//use \Model\BilletManager; // use remplace require_once grace à l'autoloader
 require_once('model/CommentaireManager.php');
+
+
 
 function listPosts()
 {

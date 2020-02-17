@@ -1,5 +1,8 @@
 <?php
-class CommentaireManager
+
+namespace \Model;
+
+class CommentaireManager extends Manager
 {
     public function getComments($billetId)
     {
@@ -19,9 +22,4 @@ class CommentaireManager
         return $affectedLines;
     }
 
-    private function dbConnect()
-    {
-        $db = new PDO('mysql:host=localhost;dbname=projet4;charset=utf8', 'root', 'root');
-        return $db;
-    }
 }

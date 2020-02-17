@@ -1,6 +1,6 @@
 <?php
 
-class Commentaire{
+class Commentaire { // extends Entity
     
     private $_id;
     private $_idBillet;
