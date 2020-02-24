@@ -1,4 +1,7 @@
 <?php
+namespace Model;
+
+use PDO;
 
 class Manager {
 
@@ -7,4 +10,6 @@ class Manager {
         $db = new PDO('mysql:host=localhost;dbname=projet4;charset=utf8', 'root', '');
         return $db;
     }
+    
+    
 }

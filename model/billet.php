@@ -1,6 +1,9 @@
 <?php
 
-require('entity.class.php');
+namespace Model;
+
+use Model\Entity;
+//require('entity.php');
 
 class Billet extends Entity {
     
@@ -65,6 +68,12 @@ class Billet extends Entity {
         
     }
         
+    
+    public function setTexte($texte)
+    {
+        $this->_texte = $texte;
+    }
+    
     
 }
     

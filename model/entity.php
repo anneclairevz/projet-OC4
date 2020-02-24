@@ -1,7 +1,9 @@
 <?php
-
+namespace Model;
+        
+    
 class Entity {
-    public function __construct($donnees) {
+    public function __construct(array $donnees) {
         $this->hydrate($donnees);
     }
 

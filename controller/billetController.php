@@ -1,17 +1,24 @@
 <?php
 
-// Chargement des classes
-require_once('model/BilletManager.php');
-//use \Model\BilletManager; // use remplace require_once grace à l'autoloader
-require_once('model/CommentaireManager.php');
+namespace Controller;
 
 
+use model\billetManager; // use remplace require_once grace à l'autoloader
+use model\commentaireManager;
+//require_once('model/CommentaireManager.php');
 
-function listPosts()
+
+class BilletController{
+
+
+function listBillets()
 {
     $billetManager = new BilletManager(); // Création d'un objet
     $posts = $billetManager->getPosts(); // Appel d'une fonction de cet objet
-
+    //var_dump($posts);
+    foreach ($posts as $post) {
+        echo $post->texte();
+        }
     require('view/frontend/listPostsView.php'); //pas encore créé!
 }
 
@@ -39,5 +46,7 @@ function addComment($billetId, $commentaire)
         header('Location: index.php?action=post&id=' . $billetId);
     }
 }
+    
+    }
 
 ?>
