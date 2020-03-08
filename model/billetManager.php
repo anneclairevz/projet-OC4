@@ -24,14 +24,13 @@ class BilletManager extends Manager {
      public function getPost($billetId)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare('SELECT id, titre, texte, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM posts WHERE id = ?');
+        $req = $db->prepare('SELECT id, titre, texte, DATE_FORMAT(date, \'%d/%m/%Y à %Hh%imin%ss\') AS date FROM billet WHERE id = ?');
         $req->execute(array($billetId));
         $post = $req->fetch(); // contient un tableau avec des paires clé/valeur donc j'accède aux données en faisant $post['titre']
-       // $myPost  = new Billet($post); // contient un objet hydraté grâce au tableau $post, donc j'accède aux données via les méthodes : $myPost->titre()
+        
+        $myPost  = new Billet($post); // contient un objet hydraté grâce au tableau $post, donc j'accède aux données via les méthodes : $myPost->titre()
 
-         //$myPost = new Billet();
-         //$myPost->setTitre = $post['titre'];
-        return $post;
+        return $myPost;
     }
 
     

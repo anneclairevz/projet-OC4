@@ -1,6 +1,9 @@
 <?php
 
-class Commentaire { // extends Entity
+namespace Model;
+use Model\Entity;
+
+class Commentaire extends Entity { 
     
     private $_id;
     private $_idBillet;

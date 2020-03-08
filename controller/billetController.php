@@ -27,7 +27,7 @@ function post()
     $billetManager = new BilletManager();
     $commentaireManager = new CommentaireManager();
 
-    $billet = $postManager->getPost($_GET['id']);
+    $billet = $billetManager->getPost($_GET['id']);
     $commentaires = $commentaireManager->getComments($_GET['id']);
 
     require('view/frontend/postView.php');
