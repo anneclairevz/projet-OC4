@@ -1,7 +1,10 @@
 <?php
 
+
 require 'autoloader.php';
 Autoloader::register();
+
+
 
 //use controller , puis j appelle toutes mes classes managers et controller dbmanager puis je fais un $billet
 
@@ -25,6 +28,8 @@ if (isset($_GET['action'])) {
             echo 'Erreur : aucun identifiant de billet envoyé';
         }
     }
+    //gerer les autres actions
+    
 }
 else {
     $billetController = new BilletController();
@@ -32,7 +37,8 @@ else {
 }
 
 
-require('view/frontend/template.php');
+
+
 
 
 

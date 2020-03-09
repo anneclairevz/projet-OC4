@@ -14,11 +14,9 @@ class BilletController{
 function listBillets()
 {
     $billetManager = new BilletManager(); // Création d'un objet
-    $posts = $billetManager->getPosts(); // Appel d'une fonction de cet objet
+    $billets = $billetManager->getPosts(); // Appel d'une fonction de cet objet
     //var_dump($posts);
-    foreach ($posts as $post) {
-        echo $post->texte();
-        }
+    
     require('view/frontend/listPostsView.php'); //pas encore créé!
 }
 
