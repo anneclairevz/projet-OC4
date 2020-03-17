@@ -6,7 +6,7 @@ use Model\Entity;
 class Commentaire extends Entity { 
     
     private $_id;
-    private $_idBillet;
+    private $_id_billet;
     private $_date;
     private $_texte;
     private $_statut;
@@ -22,7 +22,7 @@ class Commentaire extends Entity {
     
     public function id_billet()
     {
-        return $this->_idBillet;
+        return $this->_id_billet;
     }
     
     public function date() 
@@ -55,12 +55,12 @@ class Commentaire extends Entity {
         }
     }
     
-    public function setIdBillet($idBillet)
+    public function setId_billet($id_billet)
     {
-      if ($idBillet > 0)
+      if ($id_billet > 0)
         
         {
-           $this->_idbillet = $idBillet;
+           $this->_id_billet = $id_billet;
       }
     }
     
@@ -71,7 +71,15 @@ class Commentaire extends Entity {
         
     }
         
-        
+    public function setTexte($texte)
+    {
+        $this->_texte = $texte;
+    }
+    public function setStatut($statut)
+    {
+        $this->_statut = $statut;
+    }
+    
         
     
 }

@@ -1,38 +1,48 @@
-<!DOCTYPE html>
-<html>
+<?php
 
-<head>
-    <meta charset="utf-8" />
-    <title>Mon livre</title>
-    <link href="style.css" rel="stylesheet" />
-</head>
+// Chargement des classes
+namespace Controller;
 
-<body>
-    <h1>Mon super blog !</h1>
-    <p><a href="index.php">Retour à la liste des billets</a></p>
 
-    <div class="news">
-        <h3>
-            <?= htmlspecialchars($post['title']) ?>
-            <em>le <?= $post['creation_date_fr'] ?></em>
-        </h3>
+use model\billetManager; // use remplace require_once grace à l'autoloader
+use model\commentaireManager;
+//require_once('model/CommentaireManager.php');
 
-        <p>
-            <?= nl2br(htmlspecialchars($post['content'])) ?>
-        </p>
-    </div>
 
-    <h2>Commentaires</h2>
+class CommentaireController{
 
-    <?php
-        while ($commentaire = $commentaires->fetch())
-        {
-        ?>
-    <p><strong><?= htmlspecialchars($commentaire['auteur']) ?></strong> le <?= $commentaire['commentaire_date_fr'] ?></p>
-    <p><?= nl2br(htmlspecialchars($commentaire['commentaire'])) ?></p>
-    <?php
-        }
-        ?>
-</body>
 
-</html>
+function listPosts()
+{
+    $billetManager = new BilletManager(); // Création d'un objet
+    $posts = $billetManager->getPosts(); // Appel d'une fonction de cet objet
+
+    require('view/frontend/listPostsView.php'); //pas encore créé!
+}
+
+function post()
+{
+    $billetManager = new BilletManager();
+    $commentaireManager = new CommentaireManager();
+
+    $billet = $postManager->getPost($_GET['id']);
+    $commentaires = $commentaireManager->getComments($_GET['id']);
+
+    require('view/frontend/postView.php');
+}
+
+function addComment($billetId, $commentaire)
+{
+    $commentaireManager = new CommentaireManager();
+
+    $affectedLines = $commentaireManager->postComment($billetId, $commentaire);
+
+    if ($affectedLines === false) {
+        throw new Exception('Impossible d\'ajouter le commentaire !');
+    }
+    else {
+        header('Location: index.php?action=post&id=' . $billetId);
+    }
+}
+}
+?>

@@ -1,3 +1,16 @@
+<section id="four" class="wrapper style3 special">
+    <div class="container">
+        <header class="major">
+            <h2>Un nouveau chapitre chaque mois</h2>
+            <p>Restez informé sur la sortie des prochains chapitres !</p>
+        </header>
+        <ul class="actions">
+            <li><a href="#" class="button special big">S'inscrire à la newsletter</a></li>
+        </ul>
+    </div>
+</section>
+
+
 <!-- Footer -->
 <footer id="footer">
     <div class="container">
@@ -12,3 +25,15 @@
         </ul>
     </div>
 </footer>
+
+
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

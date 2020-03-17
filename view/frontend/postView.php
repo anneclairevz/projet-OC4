@@ -1,14 +1,13 @@
+<?php require('view/frontend/header.php') ?>
+
+<?= $billet->titre() ?>
+<?= $billet->texte() ?>
+
 <?php
+foreach ($commentaires as $commentaire){ ?>
+<h4><?= $commentaire->texte() ?></h4>
+
+<?php } ?>
 
 
-
-echo $billet->titre();
-echo $billet->texte();
-    
-foreach ($commentaires as $commentaire){
-    echo $commentaire->texte();
-}
-
-/*$content = ob
-//require template.php
-echo $content*/
+<?php require('view/frontend/footer.php') ?>
